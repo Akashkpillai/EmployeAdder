@@ -19,7 +19,8 @@ A  simple webapp to add and display the employe details, built using React,Fireb
 NOTE: Please read the RUN section before opening an issue.
 
 ## Demo
-![This is a video]
+
+https://user-images.githubusercontent.com/109843806/218674808-68d5ac6c-9d88-4c86-94e5-dd207f8f846a.mp4
 
 
 
