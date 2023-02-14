@@ -19,6 +19,9 @@ import LogoutIcon from '@mui/icons-material/Logout';
 import { useNavigate } from 'react-router-dom';
 import { useUserAuth } from '../../Context/AuthContext';
 import {toast} from 'react-toastify'
+import {clearAllDetails} from '../Redux/reducer'
+import { useDispatch } from 'react-redux';
+
 
 
 
@@ -84,15 +87,17 @@ export default function PersistentDrawerLeft() {
   };
 
    const { logout } = useUserAuth();
+   const dispach = useDispatch()
    
 
 
     const logOutbtn = async() =>{
        try {
         await logout();
+        dispach(clearAllDetails())
         navigate('/')
         toast.success("Logged out!")
-
+        
        } catch (error) {
         console.log(error)
        }
