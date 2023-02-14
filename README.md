@@ -1,6 +1,70 @@
-# EmployeAdder
-It is a simple webapp to display and add the datas of employes.
+# Employe-Adder
+
+A  simple webapp to add and display the employe details
+
+## Table of contents
+
+- [Introduction](#introduction)
+- [Demo](#demo)
+- [Technology](#technology)
+- [Features](#features)
+- [Run&nbsp;Backend](#runbackend)
+- [Run&nbsp;Client&nbsp;Side](#runclientside)
+
+
+## Introduction
+
+A  simple webapp to add and display the employe details, built using React,Firebase, Node js, Express js, and MongoDb.
+
+NOTE: Please read the RUN section before opening an issue.
+
+## Demo
+![This is a video]
+
+
+
+
+
+## Technology
+
+The application is built with:
+
+- React.js
+- Redux
+- Node.js
+- MongoDB
+- Express
+- Tailwind
+- Material UI
+- AntD
+
 ## Features
-- login Signup page and authentication using firebase.
-- Uploading image using cloudinary.
-- redux.
+
+- SignUp, and log in With firebase authentication.
+- User home to add and display the employe details.
+
+
+## Run&nbsp;Backend
+
+To run this application, you have to set your own environmental variables. For security reasons, some variables have been hidden from view and used as environmental variables with the help of dotenv package. Below are the variables that you need to set in order to run the application:
+
+
+- PORT: Specify the port Number
+
+- Coludinary: Specify the colud_name,api_key,api_secret.
+
+After you've set these environmental variables in the .env file at the root of the project, and intsall node modules using npm install
+
+Now you can run npm start in the terminal and the application should work.
+
+
+## Run&nbsp;Client&nbsp;Side
+
+intsall node modules using npm install
+
+Now you can run npm start in the terminal and the Client Side should start working.
+
+## Copyright
+
+Copyright 2023 © [AkashKPillai](https://github.com/Akashkpillai)
+
