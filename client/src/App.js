@@ -5,7 +5,7 @@ import NoPage from './Components/NotFound/NoPage'
 import Login from './Components/Auth/Login'
 import HomeWithNav from './Pages/HomeWithNav'
 import AddEmploye from './Components/Home/AddEmploye'
-import ProtectedRoute  from './Components/ProtectedRoute'
+
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
      <Route path='*' element={<NoPage/>} />
      <Route path="/signup" element={<SignUp/>} />
      <Route path="/" element={<Login/>} />
-     <Route path="/home" element={<ProtectedRoute><HomeWithNav/></ProtectedRoute>} />
+     <Route path="/home" element={<HomeWithNav/>} />
      <Route path="/home-add-employe" element={<AddEmploye/>} /> 
 
      </Routes>

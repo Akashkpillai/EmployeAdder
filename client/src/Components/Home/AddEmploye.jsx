@@ -1,16 +1,16 @@
 import React, { useState } from "react";
 import { PlusOutlined } from "@ant-design/icons";
 import { Form, Input, Button, Upload } from "antd";
-import {useNavigate} from 'react-router-dom'
-import axios from '../../api/axios'
-import {toast} from 'react-toastify'
+import { useNavigate } from "react-router-dom";
+import axios from "../../api/axios";
+import { toast } from "react-toastify";
 
 function AddEmploye() {
   const { TextArea } = Input;
 
   const [form] = Form.useForm();
   const [images, setImages] = useState([]);
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   const handleChange = ({ fileList }) => setImages(fileList);
 
@@ -19,18 +19,17 @@ function AddEmploye() {
       const values = form.getFieldsValue();
       const formData = new FormData();
       images.forEach((image) => formData.append("image", image.originFileObj));
-      
-      const res = await axios.post("/user/add-employe",values);
+
+      const res = await axios.post("/user/add-employe", values);
       if (res) {
-          form.resetFields();
-          toast.success("Data added")
-          navigate('/home')
+        form.resetFields();
+        toast.success("Data added");
+        navigate("/home");
       }
     } catch (error) {
-      console.log(error)
-      toast.error(error.response.data.error)
+      console.log(error);
+      toast.error(error.response.data.error);
     }
-   
   }
 
   return (
@@ -39,7 +38,7 @@ function AddEmploye() {
       <>
         <Form
           form={form}
-          onFinish={submit} 
+          onFinish={submit}
           labelCol={{ span: 4 }}
           wrapperCol={{ span: 14 }}
           layout="horizontal"
@@ -57,7 +56,7 @@ function AddEmploye() {
           </Form.Item>
 
           <Form.Item name="department" label="">
-            <TextArea placeholder="Department" cols={100}  />
+            <TextArea placeholder="Department" cols={100} />
           </Form.Item>
 
           <Form.Item name="address" label="">

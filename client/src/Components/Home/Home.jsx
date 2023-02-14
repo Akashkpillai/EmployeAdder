@@ -5,6 +5,7 @@ import axiox from '../../api/axios'
 import { useDispatch } from 'react-redux';
 import { employeAllDetails } from '../Redux/reducer';
 
+
 function AdminUserInfoPage() {
 
 const [employe,setEmpolye] = useState('');
@@ -61,7 +62,7 @@ const dispach = useDispatch();
   return (
     <div>
         <Link to="/home-add-employe">   
-     <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mb-5 rounded ml-14">Add Employe</button>
+     <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mb-5 rounded">Add Employe</button>
         </Link>
         <DataTable
           columns={columns}
