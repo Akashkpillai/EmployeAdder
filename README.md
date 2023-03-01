@@ -36,7 +36,6 @@ The application is built with:
 - MongoDB
 - Express
 - Tailwind
-- Material UI
 - AntD
 
 ## Features
