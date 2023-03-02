@@ -37,6 +37,7 @@ The application is built with:
 - Express
 - Tailwind
 - AntD
+- Firebase
 
 ## Features
 
